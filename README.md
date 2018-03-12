@@ -9,6 +9,7 @@
     - [Selectors](#selectors)
     - [Properties](#properties)
 1. [CSS](#css)
+	- [Prefixes](#prefixes)
     - [Formatting](#formatting)
     - [Comments](#comments)
     - [OOCSS and BEM](#oocss-and-bem)
@@ -65,6 +66,37 @@ Finally, properties are what give the selected elements of a rule declaration th
 **[⬆ back to top](#table-of-contents)**
 
 ## CSS
+
+### Prefixes
+**COMPONENT "c-"**
+Broken down to the simplest form. Doesn't have any significant meaning/function by itself. ie: Price, A2C Button, Lead Time Message, QTY Box
+
+**CLASS HELPERS "h-"**
+Component or Element that adds special functionality
+ie: `h-only-for-screen-reader` class, `h-square-image` mixin, "h-hidden" class
+
+**STATE MODIFIER "m-"**
+This might be rare. Modify a state of an element with CSS (not JS). 
+
+**STYLE MODIFIER "--modifier"**
+Special cases that require a change w/ module or component styles. ie: When end of list requires no `padding-bottom`, etc. ie: List style `none` or `bullet`
+
+**JS "js-"**
+DOM has some behaviour acting upon it, JavaScript provides that behaviour
+
+**SHAME "s-"**
+Temporary MODULES or COMPONENTS currently in a state of development or when not sure how to proceed building something with Zoro best practices
+
+**QA "qa-"**
+Signify that QA team is running an automated UI test which needs to find or bind onto these parts of the DOM.
+Basically just reserves hooks in the DOM for non-CSS purposes
+
+**BROWSER COMPATIBILITY "ff-, ch-, ie-"**
+Webkit, IE, Chrome, FF
+
+**JS-DATA-MODIFIER attribute "data-mod"**
+Separation of concerns for classes that are added/removed from the DOM via JS.
+
 
 ### Formatting
 
